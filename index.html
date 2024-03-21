@@ -1,0 +1,296 @@
+<html>
+
+<head>
+    <title>My plan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- หน้าต่างรับข้อมูล -->
+    <div class="input-box-container closed">
+        <h1 class="header-text">Add your new plan</h1>
+        <div class="input-box">
+            <form class="input-plan">
+                <!-- ช่องกรอกวันที่ -->
+                <input class="date-input" type="date">
+                <section class="image-time-destination-input">
+                    <!-- กล่องรับรูปภาพ -->
+                    <div class="input-image-box">
+                        <label for="image" class="add-image-icon show">add image</label>
+                        <input class="input-image" type="file" id="image" accept="image/*">
+                        <!-- กล่องแสดงตัวอย่างรูปภาพ -->
+                        <img class="preview-image hide" src="#">
+                    </div>
+                    <!-- กล่องครอบช่องรับเวลาและสถานที่ -->
+                    <div class="time-destination-input">
+                        <!-- กล่องรับเวลา และสถานที่ 1 -->
+                        <div id="input-1" class="input">
+                            <!-- กล่องรับเวลา 1 -->
+                            <select id="input-hour-1" class="input-time" type="text">
+                                <option class="้hour-option" value="none">hour</option>
+                                <option class="hour-option" value="00">00</option>
+                                <option class="้hour-option" value="01">01</option>
+                                <option class="้hour-option" value="02">02</option>
+                                <option class="้hour-option" value="03">03</option>
+                                <option class="้hour-option" value="04">04</option>
+                                <option class="้hour-option" value="05">05</option>
+                                <option class="้hour-option" value="06">06</option>
+                                <option class="้hour-option" value="07">07</option>
+                                <option class="้hour-option" value="08">08</option>
+                                <option class="้hour-option" value="09">09</option>
+                                <option class="้hour-option" value="10">10</option>
+                                <option class="้hour-option" value="11">11</option>
+                                <option class="้hour-option" value="12">12</option>
+                                <option class="้hour-option" value="13">13</option>
+                                <option class="้hour-option" value="14">14</option>
+                                <option class="้hour-option" value="15">15</option>
+                                <option class="้hour-option" value="16">16</option>
+                                <option class="้hour-option" value="17">17</option>
+                                <option class="้hour-option" value="18">18</option>
+                                <option class="้hour-option" value="19">19</option>
+                                <option class="้hour-option" value="20">20</option>
+                                <option class="้hour-option" value="21">21</option>
+                                <option class="้hour-option" value="22">22</option>
+                                <option class="้hour-option" value="23">23</option>
+                            </select>
+                            <select id="input-minute-1" class="input-time" type="text">
+                                <option class="minute-option" value="00">minute</option>
+                                <option class="minute-option" value="00">00</option>
+                                <option class="minute-option" value="05">05</option>
+                                <option class="minute-option" value="10">10</option>
+                                <option class="minute-option" value="15">15</option>
+                                <option class="minute-option" value="20">20</option>
+                                <option class="minute-option" value="25">25</option>
+                                <option class="minute-option" value="30">30</option>
+                                <option class="minute-option" value="35">35</option>
+                                <option class="minute-option" value="40">40</option>
+                                <option class="minute-option" value="45">45</option>
+                                <option class="minute-option" value="50">50</option>
+                                <option class="minute-option" value="55">55</option>
+                            </select>
+                            <!-- กล่องรับสถานที่ 1 -->
+                            <input id="input-destination-1" class="input-destination" type="text"
+                                placeholder="Destination">
+                        </div>
+                        <!-- กล่องรับเวลา และสถานที่ 2 -->
+                        <div id="input-2" class="input">
+                            <!-- กล่องรับเวลา 2 -->
+                            <select id="input-hour-2" class="input-time" type="text">
+                                <option class="้hour-option" value="none">hour</option>
+                                <option class="hour-option" value="00">00</option>
+                                <option class="้hour-option" value="01">01</option>
+                                <option class="้hour-option" value="02">02</option>
+                                <option class="้hour-option" value="03">03</option>
+                                <option class="้hour-option" value="04">04</option>
+                                <option class="้hour-option" value="05">05</option>
+                                <option class="้hour-option" value="06">06</option>
+                                <option class="้hour-option" value="07">07</option>
+                                <option class="้hour-option" value="08">08</option>
+                                <option class="้hour-option" value="09">09</option>
+                                <option class="้hour-option" value="10">10</option>
+                                <option class="้hour-option" value="11">11</option>
+                                <option class="้hour-option" value="12">12</option>
+                                <option class="้hour-option" value="13">13</option>
+                                <option class="้hour-option" value="14">14</option>
+                                <option class="้hour-option" value="15">15</option>
+                                <option class="้hour-option" value="16">16</option>
+                                <option class="้hour-option" value="17">17</option>
+                                <option class="้hour-option" value="18">18</option>
+                                <option class="้hour-option" value="19">19</option>
+                                <option class="้hour-option" value="20">20</option>
+                                <option class="้hour-option" value="21">21</option>
+                                <option class="้hour-option" value="22">22</option>
+                                <option class="้hour-option" value="23">23</option>
+                            </select>
+                            <select id="input-minute-2" class="input-time" type="text">
+                                <option class="minute-option" value="00">minute</option>
+                                <option class="minute-option" value="00">00</option>
+                                <option class="minute-option" value="05">05</option>
+                                <option class="minute-option" value="10">10</option>
+                                <option class="minute-option" value="15">15</option>
+                                <option class="minute-option" value="20">20</option>
+                                <option class="minute-option" value="25">25</option>
+                                <option class="minute-option" value="30">30</option>
+                                <option class="minute-option" value="35">35</option>
+                                <option class="minute-option" value="40">40</option>
+                                <option class="minute-option" value="45">45</option>
+                                <option class="minute-option" value="50">50</option>
+                                <option class="minute-option" value="55">55</option>
+                            </select>
+                            <!-- กล่องรับสถานที่ 2 -->
+                            <input id="input-destination-2" class="input-destination" type="text"
+                                placeholder="Destination">
+                        </div>
+                        <!-- กล่องรับเวลา และสถานที่ 3 -->
+                        <div id="input-3" class="input">
+                            <!-- กล่องรับเวลา 3 -->
+                            <select id="input-hour-3" class="input-time" type="text">
+                                <option class="้hour-option" value="none">hour</option>
+                                <option class="hour-option" value="00">00</option>
+                                <option class="้hour-option" value="01">01</option>
+                                <option class="้hour-option" value="02">02</option>
+                                <option class="้hour-option" value="03">03</option>
+                                <option class="้hour-option" value="04">04</option>
+                                <option class="้hour-option" value="05">05</option>
+                                <option class="้hour-option" value="06">06</option>
+                                <option class="้hour-option" value="07">07</option>
+                                <option class="้hour-option" value="08">08</option>
+                                <option class="้hour-option" value="09">09</option>
+                                <option class="้hour-option" value="10">10</option>
+                                <option class="้hour-option" value="11">11</option>
+                                <option class="้hour-option" value="12">12</option>
+                                <option class="้hour-option" value="13">13</option>
+                                <option class="้hour-option" value="14">14</option>
+                                <option class="้hour-option" value="15">15</option>
+                                <option class="้hour-option" value="16">16</option>
+                                <option class="้hour-option" value="17">17</option>
+                                <option class="้hour-option" value="18">18</option>
+                                <option class="้hour-option" value="19">19</option>
+                                <option class="้hour-option" value="20">20</option>
+                                <option class="้hour-option" value="21">21</option>
+                                <option class="้hour-option" value="22">22</option>
+                                <option class="้hour-option" value="23">23</option>
+                            </select>
+                            <select id="input-minute-3" class="input-time" type="text">
+                                <option class="minute-option" value="00">minute</option>
+                                <option class="minute-option" value="00">00</option>
+                                <option class="minute-option" value="05">05</option>
+                                <option class="minute-option" value="10">10</option>
+                                <option class="minute-option" value="15">15</option>
+                                <option class="minute-option" value="20">20</option>
+                                <option class="minute-option" value="25">25</option>
+                                <option class="minute-option" value="30">30</option>
+                                <option class="minute-option" value="35">35</option>
+                                <option class="minute-option" value="40">40</option>
+                                <option class="minute-option" value="45">45</option>
+                                <option class="minute-option" value="50">50</option>
+                                <option class="minute-option" value="55">55</option>
+                            </select>
+                            <!-- กล่องรับสถานที่ 3 -->
+                            <input id="input-destination-3" class="input-destination" type="text"
+                                placeholder="Destination">
+                        </div>
+                        <!-- กล่องรับเวลา และสถานที่ 4 -->
+                        <div id="input-4" class="input">
+                            <!-- กล่องรับเวลา 4 -->
+                            <select id="input-hour-4" class="input-time" type="text">
+                                <option class="้hour-option" value="none">hour</option>
+                                <option class="hour-option" value="00">00</option>
+                                <option class="้hour-option" value="01">01</option>
+                                <option class="้hour-option" value="02">02</option>
+                                <option class="้hour-option" value="03">03</option>
+                                <option class="้hour-option" value="04">04</option>
+                                <option class="้hour-option" value="05">05</option>
+                                <option class="้hour-option" value="06">06</option>
+                                <option class="้hour-option" value="07">07</option>
+                                <option class="้hour-option" value="08">08</option>
+                                <option class="้hour-option" value="09">09</option>
+                                <option class="้hour-option" value="10">10</option>
+                                <option class="้hour-option" value="11">11</option>
+                                <option class="้hour-option" value="12">12</option>
+                                <option class="้hour-option" value="13">13</option>
+                                <option class="้hour-option" value="14">14</option>
+                                <option class="้hour-option" value="15">15</option>
+                                <option class="้hour-option" value="16">16</option>
+                                <option class="้hour-option" value="17">17</option>
+                                <option class="้hour-option" value="18">18</option>
+                                <option class="้hour-option" value="19">19</option>
+                                <option class="้hour-option" value="20">20</option>
+                                <option class="้hour-option" value="21">21</option>
+                                <option class="้hour-option" value="22">22</option>
+                                <option class="้hour-option" value="23">23</option>
+                            </select>
+                            <select id="input-minute-4" class="input-time" type="text">
+                                <option class="minute-option" value="00">minute</option>
+                                <option class="minute-option" value="00">00</option>
+                                <option class="minute-option" value="05">05</option>
+                                <option class="minute-option" value="10">10</option>
+                                <option class="minute-option" value="15">15</option>
+                                <option class="minute-option" value="20">20</option>
+                                <option class="minute-option" value="25">25</option>
+                                <option class="minute-option" value="30">30</option>
+                                <option class="minute-option" value="35">35</option>
+                                <option class="minute-option" value="40">40</option>
+                                <option class="minute-option" value="45">45</option>
+                                <option class="minute-option" value="50">50</option>
+                                <option class="minute-option" value="55">55</option>
+                            </select>
+                            <!-- กล่องรับสถานที่ 4 -->
+                            <input id="input-destination-4" class="input-destination" type="text"
+                                placeholder="Destination">
+                        </div>
+                        <!-- กล่องรับเวลา และสถานที่ 5 -->
+                        <div id="input-5" class="input">
+                            <!-- กล่องรับเวลา 5 -->
+                            <select id="input-hour-5" class="input-time" type="text">
+                                <option class="้hour-option" value="none">hour</option>
+                                <option class="hour-option" value="00">00</option>
+                                <option class="้hour-option" value="01">01</option>
+                                <option class="้hour-option" value="02">02</option>
+                                <option class="้hour-option" value="03">03</option>
+                                <option class="้hour-option" value="04">04</option>
+                                <option class="้hour-option" value="05">05</option>
+                                <option class="้hour-option" value="06">06</option>
+                                <option class="้hour-option" value="07">07</option>
+                                <option class="้hour-option" value="08">08</option>
+                                <option class="้hour-option" value="09">09</option>
+                                <option class="้hour-option" value="10">10</option>
+                                <option class="้hour-option" value="11">11</option>
+                                <option class="้hour-option" value="12">12</option>
+                                <option class="้hour-option" value="13">13</option>
+                                <option class="้hour-option" value="14">14</option>
+                                <option class="้hour-option" value="15">15</option>
+                                <option class="้hour-option" value="16">16</option>
+                                <option class="้hour-option" value="17">17</option>
+                                <option class="้hour-option" value="18">18</option>
+                                <option class="้hour-option" value="19">19</option>
+                                <option class="้hour-option" value="20">20</option>
+                                <option class="้hour-option" value="21">21</option>
+                                <option class="้hour-option" value="22">22</option>
+                                <option class="้hour-option" value="23">23</option>
+                            </select>
+                            <select id="input-minute-5" class="input-time" type="text">
+                                <option class="minute-option" value="00">minute</option>
+                                <option class="minute-option" value="00">00</option>
+                                <option class="minute-option" value="05">05</option>
+                                <option class="minute-option" value="10">10</option>
+                                <option class="minute-option" value="15">15</option>
+                                <option class="minute-option" value="20">20</option>
+                                <option class="minute-option" value="25">25</option>
+                                <option class="minute-option" value="30">30</option>
+                                <option class="minute-option" value="35">35</option>
+                                <option class="minute-option" value="40">40</option>
+                                <option class="minute-option" value="45">45</option>
+                                <option class="minute-option" value="50">50</option>
+                                <option class="minute-option" value="55">55</option>
+                            </select>
+                            <!-- กล่องรับสถานที่ 5 -->
+                            <input id="input-destination-5" class="input-destination" type="text"
+                                placeholder="Destination">
+                        </div>
+                    </div>
+                </section>
+                <button class="done" type="submit">Done</button>
+            </form>
+        </div>
+        <!-- ปุ่มเปิดหน้าต่างรับข้อมูล -->
+        <div class="add-button-item">
+            <div class="main-add-button-content">
+                Add Your New Plan
+            </div>
+        </div>
+        <!-- ปุ่มปิดหน้าต่างรับข้อมูล -->
+        <div class="close-button hide">✖</div>
+    </div>
+    <!-- หน้าต่างแสดงข้อมูลที่สร้างขึ้น -->
+    <div class="flexbox">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
